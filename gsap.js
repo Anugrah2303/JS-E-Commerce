@@ -34,8 +34,7 @@ function menuCall() {
 }
 
 function closeCall() {
-    tl.to("nav", {
-        x: 550,
+    tl.from("nav", {
         opacity: 0,
         duration: .1,
         ease: "power4.out"
@@ -44,7 +43,7 @@ function closeCall() {
     setTimeout(() => {
         menuIcon.style.display = "inline-block";
         closeIcon.style.display = "none";
-    }, 350);
+    }, 1000);
 }
 
 
