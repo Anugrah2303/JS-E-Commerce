@@ -8,6 +8,7 @@ menuIcon.addEventListener("click", menuCall);
 closeIcon.addEventListener("click", closeCall);
 
 tl.to(".nav-bar", {
+    x: 0,
     width: "100vw",
     opacity: 1,
     display: "inline-flex",
@@ -15,6 +16,7 @@ tl.to(".nav-bar", {
     justifyContent: "center",
     alignItems: "center",
     // duration: 0.5
+    ease: "power3.out"
 })
 tl.to(".nav-bar button", {
     display: "block",
@@ -23,6 +25,11 @@ tl.to(".nav-bar button", {
 
 function menuCall() {
     menuIcon.style.display = "none";
+    closeIcon.style.display = "inline-block";
+    closeIcon.style.transform = "translateY(0)";
+    closeIcon.style.scale = 1;
+    closeIcon.style.opacity = 1;
+
     tl.play();
 }
 
@@ -30,10 +37,13 @@ function closeCall() {
     tl.from("nav", {
         x: 350,
         opacity: 0,
-    }, "-=0.1")
+        duration: .1,
+        ease: "power4.out"
+    }, "-=0.4")
     tl.reverse()
     setTimeout(() => {
         menuIcon.style.display = "inline-block";
+        closeIcon.style.display = "none";
     }, 1000);
 }
 

@@ -13,6 +13,7 @@
     main nav {
         opacity: 0;
         display: none;
+        transform: translateX(350px);
     }
 
     main .menu-icon {
