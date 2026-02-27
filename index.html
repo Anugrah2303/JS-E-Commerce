@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+    <!-- remix -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+
+    <main class="border container mq-cont">
+        <a href="#" class="header">
+            <h1>INDIA MART</h1>
+        </a>
+        <nav class="nav-bar">
+            <button class="btn" id="addProduct">Add Product</button>
+            <button class="btn" id="cart">Cart</button>
+            <select id="shorting">
+                <option selected disabled>Sort BY Price</option>
+                <option value="ascPrice">ASC</option>
+                <option value="DSCPrice">DSC</option>
+                <option value="clearAll">Normal</option>
+            </select>
+
+
+            <div class="searchBar">
+                <input type="text" placeholder="Search Hear" class="btn gBtn">
+            </div>
+            <i class="ri-close-large-fill btn close"></i>
+        </nav>
+        <i class="ri-menu-line btn menu-icon"></i>
+    </main>
+
+    <section class="container">
+        <div class="group-card gro-card">
+
+        </div>
+
+        <div class="add-card">
+            <div class="Main-class">
+                <form class="d-c-flex" id="addForm">
+                    <i class="ri-close-large-fill form-close"></i>
+                    <div>
+                        <label class="d-flex">URL:</label>
+                        <input class="btn url" type="text" placeholder="URL..." required>
+                    </div>
+                    <div>
+                        <label class="d-flex">Name:</label>
+                        <input class="btn name" type="text" placeholder="HEading / Name..." required>
+                    </div>
+                    <div>
+                        <label class="d-flex">Price:</label>
+                        <input class="btn prices" type="number" placeholder="Price in ₹..." required>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">Add Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="change-card">
+            <div class="Main-class">
+                <form class="d-c-flex" id="changeForm">
+                    <i class="ri-close-large-fill change-card-close"></i>
+                    <div>
+                        <label class="d-flex">Change URL:</label>
+                        <input class="btn urlChange" type="text" placeholder="Change URL..." required>
+                    </div>
+                    <div>
+                        <label class="d-flex">Change Name:</label>
+                        <input class="btn nameChange" type="text" placeholder="Change HEading / Name..." required>
+                    </div>
+                    <div>
+                        <label class="d-flex">Change Price:</label>
+                        <input class="btn pricesChange" type="number" placeholder="Change Price in ₹..." required>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="cart-data">
+            <div class="cont d-flex">
+                <i class="ri-close-large-fill cartClose"></i>
+                <div class="cart-group-cart">
+
+                </div>
+                <h2 class="tp">Total Price: ₹<span id="totalPrice">0</span></h2>
+                <button class="btn" id="order">Order</button>
+            </div>
+            <div id="order-model">
+                <h2>Your Order Is Conformed</h2>
+                <button class="btn" id="conform">Okay!!!</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="gsap.js"></script>
+
+    <!-- JS -->
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>

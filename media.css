@@ -1,0 +1,35 @@
+@media (max-width: 795px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    main {
+        padding: 0 10rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    main nav {
+        opacity: 0;
+        display: none;
+    }
+
+    main .menu-icon {
+        display: inline-block;
+    }
+
+    main .close {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 340px) {
+    .add-card form div{
+        flex-direction: column;
+    }
+
+}
+
+/*  */
+
