@@ -117,6 +117,9 @@ h1:hover {
 ========================== */
 
 main {
+    border: 2px solid var(--primary-soft);
+    border-radius: 20rem;
+    box-shadow: .12rem .12rem 0 0;
     opacity: 0;
     scale: 0;
     display: flex;
@@ -225,7 +228,8 @@ section {
     opacity: 1;
     /* animation: floatCard 9s ease-in-out infinite; */
 }
-.gro-card{
+
+.gro-card {
     transform: translateX(1300px);
 }
 
@@ -298,7 +302,7 @@ section {
     outline: 1px solid var(--primary-main);
 }
 
-.btnDiv{
+.btnDiv {
     gap: .7rem;
 }
 
@@ -407,7 +411,7 @@ form .form-close,
     width: 100%;
 }
 
-.cart-group-cart .card{
+.cart-group-cart .card {
     margin-top: 2.5rem;
     width: 100%;
     opacity: 1;
@@ -514,7 +518,7 @@ form .form-close,
     cursor: pointer;
 }
 
-section .gro-card{
+section .gro-card {
     opacity: 0;
     scale: 0;
 }

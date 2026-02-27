@@ -34,17 +34,17 @@ function menuCall() {
 }
 
 function closeCall() {
-    tl.from("nav", {
-        x: 350,
+    tl.to("nav", {
+        x: 550,
         opacity: 0,
         duration: .1,
         ease: "power4.out"
-    }, "-=0.4")
+    }, "-=0.3")
     tl.reverse()
     setTimeout(() => {
         menuIcon.style.display = "inline-block";
         closeIcon.style.display = "none";
-    }, 1000);
+    }, 350);
 }
 
 
